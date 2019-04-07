@@ -28,8 +28,56 @@
   </header>
 
   <main>
-    <h1 class="page-title">Подбор программы</h1>
-
+    <h1 class="title-primary">Подбор программы</h1>
+    <section>
+      <h2 class="visually-hidden">Форма персонального подбора программы</h2>
+      <p class="page-lead">
+        Заполните анкету и мы подберем
+        программу питания для вашего кота
+      </p>
+      <form class="program-selection-form" action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset class="program-selection-form__fieldset">
+          <legend class="visually-hidden">Основная информация</legend>
+          <label class="program-selection-form__label label" for="name">Имя:*</label>
+          <input class="program-selection-form__input-text input-text" id="name" type="text" name="name" required placeholder="БАРСИК">
+          <label class="program-selection-form__label label" for="weight">Вес (кг):*</label>
+          <input class="program-selection-form__input-text input-text" id="weight" type="text" name="weight" required placeholder="7">
+          <label class="program-selection-form__label label" for="age">Возраст (лет):</label>
+          <input class="program-selection-form__input-text input-text" id="age" type="text" name="age" placeholder="7">
+        </fieldset>
+        <fieldset class="program-selection-form__fieldset">
+          <legend class="visually-hidden">Тип программы</legend>
+          <input id="slim" type="radio" name="type-of-program" value="slim">
+          <label class="program-selection-form__label label" for="slim">Похудение</label>
+          <input id="gain" type="radio" name="type-of-program" value="gain">
+          <label class="program-selection-form__label label" for="gain">Набор массы</label>
+          <input id="idk" type="radio" name="type-of-program" value="idk">
+          <label class="program-selection-form__label label" for="idk">Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset class="program-selection-form__fieldset">
+          <legend class="title-secondary">Контактные данные(владельца кота)</legend>
+          <input class="program-selection-form__input-text input-text" type="email" name="email" placeholder="kuklachev@gmail.com">
+          <input class="program-selection-form__input-text input-text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
+        </fieldset>
+        <fieldset class="program-selection-form__fieldset">
+          <legend class="title-secondary">Комментарий</legend>
+          <textarea class="program-selection-form__input-text input-text" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+        <fieldset class="program-selection-form__fieldset">
+          <legend class="title-secondary">Дополнительно</legend>
+          <input id="sweetener" type="checkbox" name="optionals" value="sweetener">
+          <label class="program-selection-form__label label" for="sweetener">Сахарозаменитель</label>
+          <input id="water" type="checkbox" name="optionals" value="water">
+          <label class="program-selection-form__label label" for="water">Питьевая вода</label>
+          <input id="milk" type="checkbox" name="optionals" value="milk">
+          <label class="program-selection-form__label label" for="milk">Молоко</label>
+          <input id="vitamins" type="checkbox" name="optionals" value="vitamins">
+          <label class="program-selection-form__label label" for="vitamins">Витамины</label>
+        </fieldset>
+        <button class="program-selection-form__submit button" type="submit">Отправить заявку</button>
+        <span class="program-selection-form__note">* — Обязательные поля</span>
+      </form>
+    </section>
   </main>
 
   <footer class="page-footer">
