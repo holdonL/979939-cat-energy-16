@@ -5,14 +5,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
 
 <body>
   <header class="page-header">
-    <img class="page-header__logo logo-image" src="http://placehold.it/191x39" alt="Логотип компании Кэт энерджи" width="191" height="39">
-    <button class="page-header__button">Menu</button>
+    <div class="page-header__wrapper">
+      <img class="page-header__logo logo-image" src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+      <button class="page-header__button"></button>
+    </div>
     <nav class="main-navigation">
+      <!-- site-list нужно будет переименовать, название путает -->
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
           <a href="#">Главная</a>
@@ -29,34 +33,31 @@
 
   <main>
     <section class="main-lead">
-      <h1 class="main-lead__heading title-primary">Функциональное питание для котов</h1>
+      <h1 class="main-lead__heading title-primary title-primary--white">Функциональное питание для котов</h1>
       <p class="main-lead__motto">Занялся собой? Займись котом!</p>
-      <img class="main-lead__image" src="http://placehold.it/280x270" alt="Функциональное питание для котов" width="280" height="270">
+      <img class="main-lead__image" src="img/index-can-mobile@1x.png" alt="Функциональное питание для котов" width="280" height="270">
       <button class="main-lead__button button">Подобрать программу</button>
     </section>
-    <!-- Мне не нравится блок, который идет ниже. Два одинаковых блока разметил, а как их объеденить в один не пойму по БЕМу.
-     Я бы в один section объеденил, но тогда хочется еще в список завернуть и как это все именовать по БЕМу я без понятия.-->
     <section>
-      <ul>
-        <li class="main-catalog-card main-catalog-card--slim">
+      <ul class="best-deals-list">
+        <li class="best-deals-list__item main-catalog-card">
           <h2 class="main-catalog-card__heading">Похудение</h2>
           <p class="main-catalog-card__text">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
             Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="main-catalog-card__link" href="#">Каталог Slim</a>
+          <a class="main-catalog-card__link" href="#">Каталог Slim <span class="main-catalog-card__arrow">➡</span></a>
         </li>
-        <li class="main-catalog-card main-catalog-card--pro">
+        <li class="best-deals-list__item main-catalog-card main-catalog-card--pro">
           <h2 class="main-catalog-card__heading">Набор массы</h2>
           <p class="main-catalog-card__text">
             Заработать авторитет среди дворовых котов и даже собак?
             Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="main-catalog-card__link" href="#">Каталог Pro</a>
+          <a class="main-catalog-card__link" href="#">Каталог Pro <span class="main-catalog-card__arrow">➡</span></a>
         </li>
       </ul>
     </section>
-    <!-- ^ -->
     <section class="how-works">
       <h2 class="how-works__heading title-primary">Как это работает</h2>
       <ul class="how-works__list">
