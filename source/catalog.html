@@ -11,17 +11,20 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__link-to-main" href="index.html">
-      <img class="page-header__logo logo-image" src="http://placehold.it/191x39" alt="Логотип компании Кэт энерджи" width="191" height="39">
-    </a>
-    <button class="page-header__button">Menu</button>
+    <div class="page-header__wrapper">
+      <a class="page-header__logo" href="index.html">
+        <img class="logo-image" src="img/logo-mobile.svg" alt="Логотип компании Кэт энерджи" width="191" height="39">
+      </a>
+      <button class="page-header__button"></button>
+    </div>
     <nav class="main-navigation">
+      <!-- site-list нужно будет переименовать, название путает -->
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
-          <a href="index.html">Главная</a>
+          <a href="#">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="#">Каталог продукции</a>
+          <a href="catalog.html">Каталог продукции</a>
         </li>
         <li class="site-list__item">
           <a href="form.html">Подбор программы</a>
@@ -246,37 +249,41 @@
   </main>
 
   <footer class="page-footer">
-    <p class="page-footer__address">
-      <span>
-        Приглашаем
-        к сотрудничеству
-        дилеров!
-      </span>
-      <span>
-        ул. Большая Конюшенная, д. 19/8
-        Санкт-Петербург
-      </span>
-    </p>
-    <div class="page-footer__map">MAP</div>
+    <div class="address__wrapper">
+      <p class="page-footer__address address">
+        <span class="address__lead">
+          Приглашаем
+          к сотрудничеству
+          дилеров!
+        </span>
+        <span class="address__details">
+          ул. Большая Конюшенная, д. 19/8
+          Санкт-Петербург
+        </span>
+      </p>
+    </div>
+    <iframe class="page-footer__map" src="https://yandex.ru/map-widget/v1/-/CBF9nKAJWA?scroll=0" scroll="0" width="320" height="320" frameborder="0" allowfullscreen="true"></iframe>
     <div class="page-footer__wrapper">
-      <img class="page-footer__logo logo-image" src="http://placehold.it/128x24" alt="Логотип компании Кэт энерджи" width="128" height="24">
-      <ul class="page-footer__social social">
-        <li class="social__item">
-          <a class="social__link" href="#">VK</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">IG</a>
-        </li>
-        <li class="social__item">
-          <a class="social__link" href="#">FB</a>
-        </li>
-      </ul>
+      <img class="page-footer__logo logo-image" src="img/logo-footer.svg" alt="Логотип компании Кэт энерджи" width="128" height="24">
+      <div class="page-footer__social-wrapper">
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#"><span class="visually-hidden">Кэт Энерджи ВКонтакте</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="#"><span class="visually-hidden">Кэт Энерджи Инстаграме</span></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#"><span class="visually-hidden">Кэт Энерджи Фэйсбуке</span></a>
+          </li>
+        </ul>
+      </div>
       <p class="page-footer__developer developer">
         <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
           <span class="developer__name">
             HTML Academy
           </span>
-          <img class="developer__logo" src="http://placehold.it/27x34" alt="HTML Academy" width="27" height="34">
+          <img class="developer__logo" src="img/htmlacademy.svg" alt="HTML Academy" width="27" height="34">
         </a>
       </p>
     </div>
