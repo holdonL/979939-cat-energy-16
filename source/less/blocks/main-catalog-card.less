@@ -61,14 +61,18 @@
   line-height: 16px;
   text-transform: uppercase;
   position: relative;
-}
 
-.main-catalog-card__arrow {
-  position: absolute;
-  top: 1px;
-  right: -36px;
-  font-size: 30px;
-  vertical-align: baseline;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 12px;
+    right: -37px;
+    bottom: 6px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .main-catalog-card--pro {
