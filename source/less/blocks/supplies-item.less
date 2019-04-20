@@ -1,0 +1,37 @@
+.supplies-item {
+  width: 280px;
+  padding-bottom: 17px;
+  padding-top: 10px;
+  border-bottom: 1px solid @border;
+
+  &:first-child {
+    border-top: 1px solid @border;
+  }
+}
+
+.supplies-item__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @black-text;
+  font-weight: normal;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.supplies-item__details {
+  margin-bottom: 14px;
+  font-family: @font-secondary;
+  font-size: 14px;
+  line-height: 14px;
+  color: @gray-text;
+  font-weight: normal;
+
+  tr {
+    display: flex;
+    width: 280px;
+    justify-content: space-between;
+  }
+}
