@@ -17,7 +17,7 @@
       </a>
       <button class="page-header__button"></button>
     </div>
-    <nav class="main-navigation">
+    <nav class="main-navigation js">
       <!-- site-list нужно будет переименовать, название путает -->
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
@@ -34,8 +34,8 @@
   </header>
 
   <main>
-    <h1 class="title-primary">Подбор программы</h1>
-    <section>
+    <h1 class="title-primary title-primary--centered">Подбор программы</h1>
+    <section class="program">
       <h2 class="visually-hidden">Форма персонального подбора программы</h2>
       <p class="page-lead">
         Заполните анкету и мы подберем
@@ -61,16 +61,16 @@
           <label class="program-selection-form__label label" for="idk">Не знаю (Нужен ваш совет)</label>
         </fieldset>
         <fieldset class="program-selection-form__fieldset">
-          <legend class="title-secondary">Контактные данные(владельца кота)</legend>
+          <legend class="title-secondary">Контактные данные(владельца кота)<span class="title-secondary__line"></span></legend>
           <input class="program-selection-form__input-text input-text" type="email" name="email" placeholder="kuklachev@gmail.com">
           <input class="program-selection-form__input-text input-text" type="tel" name="telephone" placeholder="8 (960) 900-60-90">
         </fieldset>
         <fieldset class="program-selection-form__fieldset">
-          <legend class="title-secondary">Комментарий</legend>
+          <legend class="title-secondary">Комментарий<span class="title-secondary__line"></span></legend>
           <textarea class="program-selection-form__input-text input-text" name="comment" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="program-selection-form__fieldset">
-          <legend class="title-secondary">Дополнительно</legend>
+          <legend class="title-secondary">Дополнительно<span class="title-secondary__line"></span></legend>
           <input id="sweetener" type="checkbox" name="optionals" value="sweetener">
           <label class="program-selection-form__label label" for="sweetener">Сахарозаменитель</label>
           <input id="water" type="checkbox" name="optionals" value="water">
@@ -126,7 +126,7 @@
       </p>
     </div>
   </footer>
-
+  <script src="js/menu.js"></script>
 </body>
 
 </html>
